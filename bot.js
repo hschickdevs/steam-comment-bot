@@ -2,6 +2,7 @@ const SteamCommunity = require('steamcommunity');
 const ReadLine = require('readline');
 const config = require('./config/config.json');
 const TelegramBot = require('node-telegram-bot-api');
+const fetch = require("node-fetch");
 var fs = require('fs');
 var util = require('util');
 

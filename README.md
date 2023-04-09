@@ -3,7 +3,7 @@
     <h2>Automatically post messages to a list of Steam groups profiles from an authenticated user. </h2>
 </div>
 
-![node version](https://img.shields.io/badge/node-v9.6.4-blue)
+![node version](https://img.shields.io/badge/node-≥v9.6.4-blue)
 [![license](https://img.shields.io/npm/l/steam-tradeoffer-manager.svg)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
 ![version](https://img.shields.io/badge/version-v1.0.1-lightgrey)
 
@@ -15,9 +15,17 @@ The primary utility of this bot is to automate posting messages to a list of Ste
 * Announcements for gaming groups
 * Advertisements
 
-> ⚠️ **Disclaimer:** This bot is not intended to be used for spamming. Automated bot usage may subject the user to moderation actions from Steam. It is recommended that you use this bot with caution and at your own risk.
-
 This bot was written with NodeJS, and utilizes [@DoctorMcKay's](https://github.com/DoctorMcKay) node packages for Steam Community connectivity. 
+
+### Guidelines:
+
+> ⚠️ **Disclaimer:** This bot is not intended to be used for spamming. Automated bot usage may subject the user to moderation actions from Steam. It is recommended that you use this bot with caution and at your OWN RISK. I cannot provide any guarantee that your account will not be banned for using this bot.
+
+The following guidelines will help keep your account safe from moderation actions:
+
+1. Don't say anywhere on the alt's profile that the bot is "autoposting", as this is possibly against TOS. Just say that it's a redirect or alt, and to add/message your main acc.
+2. Make sure that tradeposts are always in a trading forum
+3. Make sure to allow other people to comment before we send our next post - set this variable in configuration script. (e.g. 6 posts minimum before we can post again)
 
 ## Pre-Requisites
 
@@ -31,6 +39,8 @@ In order to run this bot, you will need a few things:
 ## Setting up the Environment:
 
 For the sake of this documentation, I will be using https://cloud.linode.com/ as my VPS provider. Using a VPS is recommended, as it will allow you to run the bot 24/7 without having to keep your local machine on.
+
+Running the cheapest VPS on linode costs around $5/month, and is more than enough power to run this bot.
 
 ### Creating a VPS
 
@@ -96,6 +106,8 @@ If you need to quit or restart the configuration script, you can press `CTRL + C
 
 If you successfully completed the configuration, you can view your config file [**here**](./config/config.json)
 
+If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
+
 ### Starting the Bot
 
 Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following commands in your VPS console:
@@ -114,13 +126,16 @@ start-bot
 
 You will be prompted to authenticate with Steam, and once you are authenticated the bot will start! Successful authentication will look like this:
 
+<img src="https://i.ibb.co/hm5n3y3/ref2.png" width=400>
 
+If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
 
-## Outline:
+## Troubleshooting
 
-- on setInterval, the bot should pull the latest list of groups from the data source, then send the specified tradepost to all of these groups while respecting the daily post limit.
+* If you keep seeing 429 errors _when trying to authenticate or configure the bot_, this is normal. Please wait a few minutes and try again. 
 
-## A few things that we need to keep in mind if you want to running the bot:
-1. Don't say anywhere on the alt's profile that the bot is "autoposting", as this is possibly against TOS. Just say that it's a redirect, and to add/message your main acc.
-2. Make sure that tradeposts are always in a trading forum (This might be why we got temp banned)
-3. Make sure that we are waiting for other people to comment before we send our next post. (e.g. 6 posts minimum before we can post again)
+* If you are seeing 429 errors when the bot _starts posting between groups_, this is likely because you are posting too frequently. If you configured the bot using advanced options, then you can try to increase the post interval to a higher number.
+
+## Contributing & Contact
+
+If you have any questions, comments, or concerns, feel free to contact me on Telegram at [t.me/hschickdevs](https://t.me/hschickdevs). If you would like to contribute to this project, feel free to open a issue on GitHub.
