@@ -4,9 +4,7 @@ sudo apt-get update
 sudo apt upgrade -y 
 sudo apt install nodejs npm git tmux -y
 
-git clone https://github.com/hschickdevs/csgo-group-bot.git
-
-# npm install pm2@latest -g
+git clone https://github.com/hschickdevs/steam-group-bot.git
 
 echo -n "alias configure-bot='cd ~/csgo-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
 echo -e "\nalias start-bot='cd ~/csgo-group-bot && clear && node ./bot.js'" >> ~/.bashrc

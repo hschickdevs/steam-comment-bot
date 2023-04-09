@@ -60,6 +60,22 @@ You have now successfully created a VPS!
 
 ### Installing Dependencies
 
+To install the dependencies for the bot, run the following commands in your VPS console:
+
+First, using the installation script install the dependencies (_copy and paste the following command into your console_):
+
+```bash
+wget https://github.com/hschickdevs/steam-group-bot/blob/main/bash/install.sh && bash install.sh
+```
+
+Second, reboot the VM and wait for it to restart:
+
+```bash
+sudo reboot
+```
+
+Once you see `localhost login:` again, you can login and continue with the next steps.
+
 ## How to Run the Bot:
 
 1. Create Debian VM using https://cloud.linode.com/
