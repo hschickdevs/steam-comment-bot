@@ -72,10 +72,14 @@ You have now successfully created a VPS!
 
 To install the dependencies for the bot, run the following commands in your VPS console:
 
-First, using the installation script install the dependencies (_copy and paste the following command into your console_):
+First, using the installation script, install the dependencies by running the two commands in succession:
 
 ```bash
-wget https://github.com/hschickdevs/steam-group-bot/blob/main/bash/install.sh && bash install.sh
+wget https://raw.githubusercontent.com/hschickdevs/steam-group-bot/main/bash/install.sh
+```
+
+```bash
+bash install.sh
 ```
 
 Second, reboot the VM and wait for it to restart:
