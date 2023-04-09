@@ -127,6 +127,7 @@ dist
 .pnp.*
 
 # Project
+config/config.json
 config/config_old2.json
 
 testing.js
