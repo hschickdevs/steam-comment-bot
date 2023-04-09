@@ -28,7 +28,7 @@ In order to run this bot, you will need a few things:
 * A Unix OS local machine, or a VPS (Virtual Private Server) to run the bot
     * If you don't have experience with either of these, see the steps below for more information
 
-## Setting up the Environment
+## Setting up the Environment:
 
 For the sake of this documentation, I will be using https://cloud.linode.com/ as my VPS provider. Using a VPS is recommended, as it will allow you to run the bot 24/7 without having to keep your local machine on.
 
@@ -74,15 +74,47 @@ Second, reboot the VM and wait for it to restart:
 sudo reboot
 ```
 
-Once you see `localhost login:` again, you can login and continue with the next steps.
+Once you see `localhost login:` again, you can login.
 
-## How to Run the Bot:
+After login, your VPS is now ready to run the bot!
 
-1. Create Debian VM using https://cloud.linode.com/
-2. run the `provision.sh` script
-3. reboot the VM `sudo reboot`
-4. Configure the bot
-5. Run with the `start-bot` alias
+## Running the Bot:
+
+To run the bot, you will need to configure the bot, then start it.
+
+### Configuring the Bot
+
+To configure the bot you can use the configuration script that I have created for convenience. If you want to get an idea of what configuration variables exist, see [**config/README.md**](config/README.md)
+
+To configure the bot, run the following command in your VPS console and carefully follow the prompts:
+
+```bash
+configure-bot
+```
+
+If you need to quit or restart the configuration script, you can press `CTRL + C` and rerun the command. The config is not saved until it's completed.
+
+If you successfully completed the configuration, you can view your config file [**here**](./config/config.json)
+
+### Starting the Bot
+
+Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following commands in your VPS console:
+
+First, start a `tmux` session, which will keep the bot running even if you close the console:
+
+```bash
+tmux new
+```
+
+Second, start the bot:
+
+```bash
+start-bot
+```
+
+You will be prompted to authenticate with Steam, and once you are authenticated the bot will start! Successful authentication will look like this:
+
+
 
 ## Outline:
 
