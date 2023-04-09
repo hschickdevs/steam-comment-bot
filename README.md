@@ -128,7 +128,23 @@ You will be prompted to authenticate with Steam, and once you are authenticated 
 
 <img src="https://i.ibb.co/hm5n3y3/ref2.png" width=400>
 
+You can safely close the terminal window and the bot will continue to run. If you want to come back to the terminal and view the bot's output, you can re-attach to the tmux session using:
+
+```bash
+tmux attach
+```
+
 If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
+
+### Stop the Bot
+
+To stop the bot, you can enter the following command in your VPS console:
+
+```bash
+tmux kill
+```
+
+_Alternatively_, you can re-attach to the tmux session and then press `CTRL + C` to stop the bot.
 
 ## Troubleshooting
 
