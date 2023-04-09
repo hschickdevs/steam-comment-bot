@@ -1,9 +1,7 @@
-<center>
+<div align="center">
     <img src="media/logo.png" width=350>
     <h2>Automatically post messages to a list of Steam groups profiles from an authenticated user. </h2>
-</center>
-
-___
+</div>
 
 ![node version](https://img.shields.io/badge/node-v9.6.4-blue)
 [![license](https://img.shields.io/npm/l/steam-tradeoffer-manager.svg)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
