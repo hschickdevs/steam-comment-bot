@@ -4,7 +4,7 @@
 </div>
 
 ![node version](https://img.shields.io/badge/node-≥v9.6.4-blue)
-[![license](https://img.shields.io/npm/l/steam-tradeoffer-manager.svg)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
 ![version](https://img.shields.io/badge/version-v1.0.1-lightgrey)
 
 ## Overview
