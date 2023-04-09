@@ -1,0 +1,13 @@
+{
+    "interval": 3600,
+    "tg_bot_token": null,
+    "tg_chat_id": null,
+    "group_post_delay": 20,
+    "group_join_delay": 10,
+    "anti_spam_count": 4,
+    "join_unlisted_groups": false,
+    "message": null,
+    "username": null,
+    "password": null,
+    "groups": []
+}

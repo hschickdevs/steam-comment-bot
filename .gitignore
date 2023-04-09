@@ -125,3 +125,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Project
+config/config_old2.json
+
+testing.js
+dev.txt
+todo.txt
+log.txt

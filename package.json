@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "install-bot": "bash ./util/install.sh",
+    "configure-bot": "node ./util/configure",
+    "start-bot": "node ./bot"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0",
+    "prompt-sync": "^4.2.0",
+    "steamcommunity": "^3.44.3"
+  }
+}
