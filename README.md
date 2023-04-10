@@ -9,6 +9,8 @@
 
 ## Overview
 
+<img src="./media/demo.png" width=400>
+
 The primary utility of this bot is to automate posting messages to a list of Steam groups and/or profiles from an authenticated user. The original inspiration behind this bot was my desire to automate posting to different CSGO trading groups, and the lack of available tools for this. Use cases for the bot include:
 
 * Tradeposts for trading groups (CSGO, Dota 2, TF2, etc.)
