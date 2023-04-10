@@ -7,15 +7,15 @@
 [![license](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
 ![version](https://img.shields.io/badge/version-v1.0.1-lightgrey)
 
-## Overview
-
-<img src="./media/demo.png" width=400>
+## Steam Group Bot Overview
 
 The primary utility of this bot is to automate posting messages to a list of Steam groups and/or profiles from an authenticated user. The original inspiration behind this bot was my desire to automate posting to different CSGO trading groups, and the lack of available tools for this. Use cases for the bot include:
 
 * Tradeposts for trading groups (CSGO, Dota 2, TF2, etc.)
 * Announcements for gaming groups
 * Advertisements
+
+<img src="./media/demo.png" width=420 alt="demo">
 
 This bot was written with NodeJS, and utilizes [@DoctorMcKay's](https://github.com/DoctorMcKay) node packages for Steam Community connectivity. 
 
