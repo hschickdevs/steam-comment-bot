@@ -5,9 +5,9 @@
     "start-bot": "node ./bot"
   },
   "dependencies": {
-    "node-fetch": "^2.6.9",
-    "node-telegram-bot-api": "^0.61.0",
+    "node-fetch": "2.6.1",
+    "node-telegram-bot-api": "^0.63.0",
     "prompt-sync": "^4.2.0",
-    "steamcommunity": "^3.44.3"
+    "steamcommunity": "^3.47.0"
   }
 }
