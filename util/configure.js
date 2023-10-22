@@ -14,7 +14,7 @@ var rl = ReadLine.createInterface({
 });
 
 // ------------------ MAIN ------------------ //
-fs.readFile('./media/logo.txt', 'utf8', (err, data) => {
+fs.readFile('../media/logo.txt', 'utf8', (err, data) => {
 	if (err) {
 	  console.error(err);
 	  return;
