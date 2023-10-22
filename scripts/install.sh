@@ -6,6 +6,9 @@ sudo apt install nodejs npm git tmux -y
 
 git clone https://github.com/hschickdevs/steam-group-bot.git
 
+# TEMPORARY:
+git checkout dev
+
 # Adding alias to configure the bot
 echo -n "alias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
 
