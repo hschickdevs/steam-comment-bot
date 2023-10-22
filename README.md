@@ -7,7 +7,7 @@
 [![license](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
 ![version](https://img.shields.io/badge/version-v1.0.1-lightgrey)
 
-## Steam Group Bot Overview
+## Steam Comment Bot Overview
 
 The primary utility of this bot is to automate posting messages to a list of Steam groups and/or profiles from an authenticated user. The original inspiration behind this bot was my desire to automate posting to different CSGO trading groups, and the lack of available tools for this. Use cases for the bot include:
 
