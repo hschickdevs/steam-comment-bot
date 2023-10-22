@@ -8,7 +8,7 @@ git clone https://github.com/hschickdevs/steam-group-bot.git
 cd steam-group-bot
 
 # Adding alias to configure the bot
-echo -n "\nalias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
+echo -e "\nalias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
 
 # Adding alias to start the bot within a new tmux session or attach to it if it already exists
 echo -e "\nalias start-bot='tmux new-session -d -s bot-session \"cd ~/steam-group-bot && clear && node ./bot.js\" || tmux attach -t bot-session'" >> ~/.bashrc
