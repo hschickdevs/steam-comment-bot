@@ -118,15 +118,7 @@ If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
 
 ### Starting the Bot
 
-Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following commands in your VPS console:
-
-First, start a `tmux` session, which will keep the bot running even if you close the console:
-
-```bash
-tmux new
-```
-
-Second, start the bot:
+Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following command in your VPS console:
 
 ```bash
 start-bot
