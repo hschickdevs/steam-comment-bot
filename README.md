@@ -74,17 +74,11 @@ You have now successfully created a VPS!
 
 To install the dependencies for the bot, run the following commands in your VPS console:
 
-1. Using the installation script, install the dependencies by running the two commands in succession:
+1. Install the software dependencies by running the follow command in your terminal:
 
     ```bash
-    wget https://raw.githubusercontent.com/hschickdevs/steam-group-bot/main/bash/install.sh
+    wget https://raw.githubusercontent.com/hschickdevs/steam-group-bot/main/bash/install.sh && bash install.sh
     ```
-
-    ```bash
-    bash install.sh
-    ```
-
-    You can then safely delete the installation script `install.sh` if you'd like.
 
 2. Reboot the VM and wait for it to restart:
 
@@ -118,15 +112,7 @@ If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
 
 ### Starting the Bot
 
-Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following commands in your VPS console:
-
-First, start a `tmux` session, which will keep the bot running even if you close the console:
-
-```bash
-tmux new
-```
-
-Second, start the bot:
+Now that you have provisioned the VPS and configured the bot, you can start the bot by running the following command in your VPS console:
 
 ```bash
 start-bot
@@ -136,10 +122,14 @@ You will be prompted to authenticate with Steam, and once you are authenticated 
 
 <img src="https://i.ibb.co/hm5n3y3/ref2.png" width=400>
 
-You can safely close the terminal window and the bot will continue to run. If you want to come back to the terminal and view the bot's output, you can re-attach to the tmux session using:
+You can safely close the terminal window and the bot will continue to run.
+
+### Return to the Bot
+
+If you need to return to the bot, you can re-attach to the session by running the following command after logging into your VPS:
 
 ```bash
-tmux attach
+view-bot
 ```
 
 If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
@@ -149,10 +139,10 @@ If you are having issues, see [**Troubleshooting**](#troubleshooting) below.
 To stop the bot, you can enter the following command in your VPS console:
 
 ```bash
-tmux kill
+stop-bot
 ```
 
-_Alternatively_, you can re-attach to the tmux session and then press `CTRL + C` to stop the bot.
+_Alternatively_, you can stop the bot from inside of the session (view-bot) by pressing `CTRL + C` a few times.
 
 ## Troubleshooting
 

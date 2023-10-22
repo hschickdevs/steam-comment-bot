@@ -14,15 +14,22 @@ var rl = ReadLine.createInterface({
 });
 
 // ------------------ MAIN ------------------ //
-console.log("Starting configuration script... Use CTRL + C to Quit at any time.\n")
+fs.readFile('../media/logo.txt', 'utf8', (err, data) => {
+	if (err) {
+	  console.error(err);
+	  return;
+	}
+	console.log(data);
+    console.log("Starting configuration script... Use CTRL + C to Quit at any time.\n")
 
-const steamUsername = prompt("Steam Username: ");
-const steamPassword = prompt("Steam Password: ");
-configTemplate.username = steamUsername;
-configTemplate.password = steamPassword;
+    const steamUsername = prompt("Steam Username: ");
+    const steamPassword = prompt("Steam Password: ");
+    configTemplate.username = steamUsername;
+    configTemplate.password = steamPassword;
 
-console.log("Authentication started...\n")
-run(steamUsername, steamPassword);
+    console.log("Authentication started...\n")
+    run(steamUsername, steamPassword);
+});
 
 // ------------------ MAIN FUNCTIONS ------------------ //
 function run(accountName, password, authCode, twoFactorCode, captcha) {
