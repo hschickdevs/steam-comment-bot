@@ -135,3 +135,5 @@ testing.js
 dev.txt
 todo.txt
 log.txt
+**/config.json
+**/old/**
