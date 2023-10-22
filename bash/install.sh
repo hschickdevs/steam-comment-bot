@@ -29,3 +29,6 @@ clear
 
 echo "Successfully provisioned and installed Steam Group Bot and npm version $(npm -v)!"
 echo "Please reboot the machine to finish setup using 'sudo reboot'"
+
+# Remove the script once it's completed
+rm -- "$0"
