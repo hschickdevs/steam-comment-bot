@@ -11,7 +11,7 @@ cd steam-group-bot
 echo -e "\nalias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
 
 # Adding alias to start the bot within a new tmux session or attach to it if it already exists
-echo -e "\nalias start-bot='tmux new-session -d -s bot-session \"cd ~/steam-group-bot && clear && node ./bot.js\" || tmux attach -t bot-session'" >> ~/.bashrc
+echo -e "\nalias start-bot='bash ./start.sh && tmux attach -t bot-session'" >> ~/.bashrc
 
 # Adding alias to view the bot by attaching to the tmux session, if it exists
 echo -e "\nalias view-bot='tmux attach -t bot-session || echo \"Session does not exist. Maybe the bot is not running?\"'" >> ~/.bashrc

@@ -1,10 +1,19 @@
 const SteamCommunity = require('steamcommunity');
 const ReadLine = require('readline');
-const config = require('./config/config.json');
 const TelegramBot = require('node-telegram-bot-api');
 const fetch = require("node-fetch");
 var fs = require('fs');
 var util = require('util');
+
+try {
+    config = require('./config/config.json');
+} catch (error) {
+    if (error.code === 'MODULE_NOT_FOUND') {
+        console.error('The config file does not exist. Please ensure you have a config/config.json file.');
+        process.exit(1); // Exit with a failure code
+    }
+    throw error; // Re-throw the error if it's not a "module not found" error
+}
 
 
 // ------------------------------ MAIN ------------------------------ //
