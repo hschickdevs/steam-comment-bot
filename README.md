@@ -1,6 +1,6 @@
 <div align="center">
     <img src="media/logo.png" width=350>
-    <h2>Automatically post messages to a list of Steam groups profiles from an authenticated user. </h2>
+    <h2>Automatically post messages to a list of Steam groups and/or profiles from an authenticated user. </h2>
 </div>
 
 ![node version](https://img.shields.io/badge/node-≥v9.6.4-blue)
