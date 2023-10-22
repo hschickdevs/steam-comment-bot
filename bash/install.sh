@@ -5,12 +5,10 @@ sudo apt upgrade -y
 sudo apt install nodejs npm git tmux -y
 
 git clone https://github.com/hschickdevs/steam-group-bot.git
-
-# TEMPORARY:
-git checkout dev
+cd steam-group-bot
 
 # Adding alias to configure the bot
-echo -n "alias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
+echo -n "\nalias configure-bot='cd ~/steam-group-bot/util && clear && node ./configure.js'" >> ~/.bashrc
 
 # Adding alias to start the bot within a new tmux session or attach to it if it already exists
 echo -e "\nalias start-bot='tmux new-session -d -s bot-session \"cd ~/steam-group-bot && clear && node ./bot.js\" || tmux attach -t bot-session'" >> ~/.bashrc
@@ -19,9 +17,7 @@ echo -e "\nalias start-bot='tmux new-session -d -s bot-session \"cd ~/steam-grou
 echo -e "\nalias view-bot='tmux attach -t bot-session || echo \"Session does not exist. Maybe the bot is not running?\"'" >> ~/.bashrc
 
 # Adding alias to stop the bot by killing the tmux session
-echo -e "\nalias stop-bot='tmux kill-session -t bot-session && echo \"Bot session stopped.\" || echo \"Failed to stop bot session. Maybe it's not running?\"'" >> ~/.bashrc
-
-cd ~/steam-group-bot
+echo -e "\nalias stop-bot='tmux kill-session -t bot-session && echo \"Bot session stopped.\" || echo \"Failed to stop bot session. Maybe its not running?\"'" >> ~/.bashrc
 
 npm install
 
@@ -31,4 +27,5 @@ echo "Successfully provisioned and installed Steam Group Bot and npm version $(n
 echo "Please reboot the machine to finish setup using 'sudo reboot'"
 
 # Remove the script once it's completed
+cd ..
 rm -- "$0"
