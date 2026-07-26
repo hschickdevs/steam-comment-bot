@@ -3,9 +3,20 @@
     <h2>Automatically post messages to a list of Steam groups and/or profiles from an authenticated user. </h2>
 </div>
 
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+![maintenance](https://img.shields.io/badge/maintained-no-red)
 ![node version](https://img.shields.io/badge/node-≥v9.6.4-blue)
 [![license](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
 ![version](https://img.shields.io/badge/version-v1.0.1-lightgrey)
+
+> [!IMPORTANT]
+> ### 🚧 This project is no longer actively maintained
+>
+> The bot may still work as documented, but I am no longer developing it, fixing bugs, or providing support. Steam changes its site and APIs over time, so expect things to break eventually.
+>
+> **Community contributions are still welcome.** I'm happy to review and merge pull requests from anyone who wants to spend the time fixing issues or adding features — I just don't have the bandwidth to do that work myself. Issues will likely go unanswered unless someone opens a PR alongside them.
+>
+> If you fork this and take it somewhere, open an issue and I'll happily link to it here.
 
 ## Steam Comment Bot Overview
 
@@ -152,4 +163,9 @@ _Alternatively_, you can stop the bot from inside of the session (view-bot) by p
 
 ## Contributing & Contact
 
-If you have any questions, comments, or concerns, feel free to contact me on Telegram at [t.me/hschickdevs](https://t.me/hschickdevs). If you would like to contribute to this project, feel free to open a issue on GitHub.
+This project is **unmaintained** (see the notice at the top of this README), but it is still open to contributions.
+
+* **Found a bug?** Pull requests are the fastest — and realistically the only — path to a fix. Open one and I'll review it.
+* **Just reporting?** You're welcome to open an issue so others can see it, but be aware that it may sit unaddressed unless someone picks it up.
+
+For anything else, feel free to contact me on Telegram at [t.me/hschickdevs](https://t.me/hschickdevs).
