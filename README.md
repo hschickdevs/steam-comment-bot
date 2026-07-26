@@ -3,7 +3,6 @@
     <h2>Automatically post messages to a list of Steam groups and/or profiles from an authenticated user. </h2>
 </div>
 
-[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 ![maintenance](https://img.shields.io/badge/maintained-no-red)
 ![node version](https://img.shields.io/badge/node-≥v9.6.4-blue)
 [![license](https://img.shields.io/badge/license-Apache%202.0-green)](https://github.com/hschickdevs/steam-group-bot/blob/master/LICENSE)
